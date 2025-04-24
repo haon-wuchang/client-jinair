@@ -134,14 +134,14 @@ export default function Login() {
 
   const openNaverPopup =() =>{
     const state = Math.random().toString(36).substring(2, 15);
-    const naver_client_id = 'CLQEVWVzvGWP5Smx7Vgn';
+    const naver_client_id = 'igSh_JRtFbJfw3d4EJeP';
     const callbackUrl = 'http://jinair-client.s3-website.ap-northeast-2.amazonaws.com/naver-redirect';
     const NAVER_AUTH_URL = `https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=${naver_client_id}&redirect_uri=${encodeURIComponent(callbackUrl)}&state=${state}`;
 
     window.open(NAVER_AUTH_URL, 'naverLogin', 'width=500,height=600');
   };
   const openKakaoPopup = () => {
-    const REST_API_KEY = '3f5c49e05800584ba496c54e74152ab3';
+    const REST_API_KEY = '25a9092e237670b3a2417418d2c2fea0';
     const REDIRECT_URI = 'http://jinair-client.s3-website.ap-northeast-2.amazonaws.com/kakao-redirect';
   
     const kakaoAuthUrl = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${REST_API_KEY}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}`;
